@@ -1,0 +1,14 @@
+<label class="main">
+<div>
+    <h1>
+   <mark>{{this.title}}{{this.userName}} from Maharashtra:</mark>
+    </h1>
+    <img [src]="imgUrl" alt="BridgeLabz employeement through Lab work:" (click) = "onClick($event)"/>
+</div>
+
+<div>
+ <input (input) = "onInput($event)" [(ngModel)] = "userName" />
+  <span class="error-output" >{{this.errorOutput}}</span>
+</div>
+</label>
+<router-outlet></router-outlet>
